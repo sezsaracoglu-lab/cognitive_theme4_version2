@@ -468,6 +468,11 @@ svg text{font-family:'DM Sans',sans-serif}
 <section class="panel" id="p-mq"><div class="scorebar"><span id="score">Score 0 / 0</span><button class="btn ghost" id="qrestart">↺ Restart</button></div><h1>✅ Exam-style MCQs</h1><p class="sub">Answering locks the question and shows feedback.</p><div id="quiz"></div><div id="final" class="final"></div></section>
 <section class="panel" id="p-vz"><style>
 /* ===== visual tab ===== */
+#p-vz .vsubs{display:flex;flex-direction:column;gap:8px}
+#p-vz .vsub{background:#fcfaf5;border:1px solid var(--line);border-left:4px solid #c9a96e;border-radius:12px;padding:8px 12px}
+#p-vz .vsub .n{display:inline-block;font-size:.72rem;font-weight:800;color:#fff;background:#34466b;border-radius:6px;padding:1px 7px;margin-right:6px;vertical-align:middle}
+#p-vz .vsub h5{display:inline;font-family:'Cormorant Garamond',serif;font-size:1.05rem;color:var(--navy);margin:0;vertical-align:middle}
+#p-vz .vsub p{margin:4px 0 0;font-size:.9rem;line-height:1.42}
 #p-vz{--vn:#34466b;--vg:#c9a96e;--vdg:#a8854a}
 #p-vz .vpage{max-width:1120px;margin:0 auto;padding:28px 24px 90px}
 #p-vz .vhero{background:linear-gradient(135deg,#fdf8ee 0%,#eef3fa 100%);border:1px solid var(--line);border-radius:26px;padding:30px 32px;position:relative;overflow:hidden}
@@ -672,22 +677,24 @@ svg text{font-family:'DM Sans',sans-serif}
    <text x="40" y="340" class="t-s">clear member</text><text x="280" y="340" text-anchor="middle" class="t-r">sink? seaweed? olive?</text><text x="520" y="340" text-anchor="end" class="t-s">clear non-member</text>
    <text x="280" y="366" text-anchor="middle" class="t-t">Hampton (1979): many items "just barely in" or "just barely out"</text>
   </svg><figcaption>Figure A.1. Definitions are neat; the world is messy.</figcaption></figure>
-  <ul class="vpts">
-   <li><b class="e">🗂️</b><b>Category</b> = set of things treated as equivalent (trucks, trout). <b>Concept</b> = its mental representation.</li>
-   <li><b class="e">🆕</b>Concepts let you handle <b>new</b> things: a never-seen chair, a projector with a halogen bulb.</li>
-   <li><b class="e">📏</b><b>Classical view</b>: necessary + jointly sufficient features. Fails: hardly any feature is both.</li>
-   <li><b class="e">🌫️</b><b>Hampton (1979)</b>: a continuum of membership; sinks barely utensils, sponges barely not.</li>
-   <li><b class="e">🔁</b><b>McCloskey &amp; Glucksberg (1978)</b>: asked twice, two weeks apart, people changed their minds on borderline items up to <b>22%</b>.</li>
-  </ul>
+  <div class="vsubs">
+   <div class="vsub"><b class="n">A.1.1</b><h5>Categories and concepts</h5>
+  <p>🗂️ A <b>category</b> is a set of things treated as equivalent (trucks, trout); a <b>concept</b> is its mental representation. Concepts let you extend what you learned from a few objects to a potentially <b>infinite</b> set of <b>new</b> ones.</p></div>
+   <div class="vsub"><b class="n">A.1.2</b><h5>The traditional idea: categories have definitions</h5>
+  <p>📏 The old view: categories are <b>well-defined</b> by <b>necessary</b> and <b>jointly sufficient</b> features. It fails: a dog that lost her bark is still a dog; some necessary features (blood, breathing) are not sufficient; Pluto (2006) showed "planet" had no definition.</p></div>
+   <div class="vsub"><b class="n">A.1.3</b><h5>Fuzzy categories: borderline members</h5>
+  <p>🌫️ Hampton (1979): membership is a <b>continuum</b> (sinks barely utensils, sponges barely not). McCloskey &amp; Glucksberg (1978): asked twice, two weeks apart, people changed their minds on borderline items up to <b>22 percent</b> of the time. Categories are <b>fuzzy</b>.</p></div>
+   </div>
  </div>
  <div class="vdemo"><span class="lbl">INTERACTIVE · BE YOUR OWN McCLOSKEY &amp; GLUCKSBERG</span><h4>🔁 Do you agree with yourself?</h4><p class="mini">Answer each question. Then press <b>"Two weeks later…"</b>: the same questions come back in a new order with your answers hidden. See how often you change your mind.</p>
   <div id="fzRound">Round 1</div><div id="fzList"></div>
   <button class="vbtn p" id="fzNext">⏩ Two weeks later…</button><div class="vout" id="fzOut"></div></div>
  <div class="vana"><div class="ae">🌅</div><div><b>THINK OF IT LIKE…</b>Day turning into night. Noon is clearly day and midnight clearly night, but at dusk people disagree, and you might answer differently on different evenings. Categories have dusk zones too.</div></div>
  <div class="vtrap"><div class="x"><b>✗ THE MISTAKE</b>"Fuzziness just means people don't know enough about the items."</div><div class="ok"><b>✓ CORRECT</b>The categories themselves are fuzzy: the same person answers differently on different days (McCloskey &amp; Glucksberg, 1978).</div></div>
- <div class="vtrio"><div class="f"><b>💬 SAY IT TO A FRIEND</b>We assumed every category has a strict definition. It doesn't: borders are blurry, and people aren't sure about in-between cases.</div><div class="h"><b>🔑 MEMORY HOOK</b>Definitions are neat; the world is messy.</div><div class="t"><b>✎ EXAM TIP</b>Name both problems with evidence: no defining features (dog, planet) and fuzzy boundaries (Hampton; up to 22%).</div></div>
+ <div class="vtrio"><div class="f"><b>💬 SAY IT TO A FRIEND</b>You'd think "dog" has a simple definition, but it doesn't: a three-legged dog that doesn't bark is still a dog. And for in-between things, like whether an olive is a fruit, people even give different answers two weeks later.</div><div class="h"><b>🔑 MEMORY HOOK</b>Definitions are neat; the world is messy.</div><div class="t"><b>✎ EXAM TIP</b>When asked why the classical view fails, name both problems with evidence: no necessary-and-sufficient features (dog, planet) and fuzzy boundaries (Hampton, 1979; McCloskey &amp; Glucksberg, 1978, up to 22%).</div></div>
  <div class="vwatch"><a target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=classical+view+of+concepts+fuzzy+categories+psychology">▶ Find a video: classical view and fuzzy categories</a></div>
  <details class="vchk"><summary>✅ Quick check: Why is McCloskey &amp; Glucksberg stronger evidence than disagreement between people?</summary><p>Disagreement between people could come from different knowledge. A person disagreeing with themselves two weeks later shows the boundary itself is unclear.</p></details>
+ <details class="vchk"><summary>✅ Quick check: Why does "all dogs have blood and breathe" fail as a definition of dog?</summary><p>Those features are necessary (every dog has them) but not sufficient: you have blood and breathe too, and you are not a dog.</p></details>
 </article>
 
 <article class="vlec" id="vz-A2">
@@ -702,21 +709,30 @@ svg text{font-family:'DM Sans',sans-serif}
    <text x="440" y="56" text-anchor="middle" font-size="26">🐟</text><text x="440" y="76" text-anchor="middle" class="t-b">(fish)</text>
    <g id="zFR"></g>
   </svg><figcaption>Figure A.2b. Typical = many features shared with the family, few with other families.</figcaption></figure>
-  <ul class="vpts">
-   <li><b class="e">🏆</b><b>Typicality</b> (Rosch, 1973): robins and sparrows are typical birds; ostriches and penguins atypical.</li>
-   <li><b class="e">⚡</b>Typical items are classified faster (Rips, Shoben &amp; Smith, 1973), learned first (Rosch &amp; Mervis, 1975) and mentioned first ("apples and lemons"; Onishi et al., 2008).</li>
-   <li><b class="e">🌅</b>Typicality fading = borderline members: two sides of one coin.</li>
-   <li><b class="e">👪</b><b>Family resemblance</b> (Rosch &amp; Mervis, 1975): (a) many features frequent in the category, (b) few features frequent in other categories.</li>
-   <li><b class="e">📊</b>Frequency of seeing an item matters only a little (Rosch, Simpson &amp; Miller, 1976).</li>
-  </ul>
+  <div class="vsubs">
+   <div class="vsub"><b class="n">A.2.1</b><h5>Some members are better than others</h5>
+  <p>🏆 Some members are better examples (Rosch, 1973): robins are <b>typical</b> birds, penguins <b>atypical</b>. <b>Typicality</b> affects nearly everything: membership judgements, speed (Rips et al., 1973), learning order (Rosch &amp; Mervis, 1975), even word order ("apples and lemons").</p></div>
+   <div class="vsub"><b class="n">A.2.2</b><h5>Typicality and fuzziness: two sides of one coin</h5>
+  <p>🌅 Call the most typical member the category <b>prototype</b>. The less similar an item is to it, the less typical, until you doubt it belongs (is a rug furniture?). <b>Typicality fading</b> produces <b>borderline members</b>.</p></div>
+   <div class="vsub"><b class="n">A.2.3</b><h5>What makes something typical? Family resemblance</h5>
+  <p>👪 Not <b>frequency</b> (Rosch, Simpson &amp; Miller, 1976) but <b>family resemblance theory</b> (Rosch &amp; Mervis, 1975): a typical item <b>has features that are frequent in the category</b> and <b>lacks features that are frequent in other categories</b>.</p></div>
+   </div>
  </div>
+ <div class="tblw" style="overflow-x:auto"><table class="tb"><tr><th>Typicality influences…</th><th>Source</th></tr>
+  <tr><td>Typical items are judged category members more often</td><td>Hampton (1979)</td></tr>
+  <tr><td>Categorisation is faster for typical items</td><td>Rips, Shoben &amp; Smith (1973)</td></tr>
+  <tr><td>Typical members are learned before atypical ones</td><td>Rosch &amp; Mervis (1975)</td></tr>
+  <tr><td>A category is learned more easily if typical examples are given</td><td>Mervis &amp; Pani (1980)</td></tr>
+  <tr><td>References to typical members are understood more easily</td><td>Garrod &amp; Sanford (1977)</td></tr>
+  <tr><td>People mention typical items first ("apples and lemons", not "lemons and apples")</td><td>Onishi, Murphy &amp; Bock (2008)</td></tr></table></div>
  <div class="vdemo"><span class="lbl">INTERACTIVE · RATE IT YOURSELF</span><h4>🍎 How typical is each fruit?</h4><p class="mini">Drag each slider (1 = poor example, 7 = excellent example), then compare with Rosch &amp; Mervis: <b>orange and banana</b> came first, <b>date and tomato</b> last.</p>
   <div id="zFruit"></div><button class="vbtn p" id="zFruitGo">Compare</button><div class="vout" id="zFruitOut"></div></div>
  <div class="vana"><div class="ae">👨‍👩‍👧‍👦</div><div><b>THINK OF IT LIKE…</b>A family photo: no single feature is shared by everyone (not everyone has the nose or the curls), but the child who has most of the family's features "looks most like a family member". That is where the name family resemblance comes from.</div></div>
- <div class="vtrap"><div class="x"><b>✗ THE MISTAKE</b>"A robin is typical because we see so many robins."</div><div class="ok"><b>✓ CORRECT</b>Frequency matters a little; family resemblance matters most. A table and a rug are seen equally often, yet the table is far more typical furniture.</div></div>
- <div class="vtrio"><div class="f"><b>💬 SAY IT TO A FRIEND</b>Some members are better examples. They're the ones that share lots of features with the group and few with other groups.</div><div class="h"><b>🔑 MEMORY HOOK</b>Typical = looks like the family, not like the neighbours.</div><div class="t"><b>✎ EXAM TIP</b>Match each part of family resemblance (a, b) to one Rosch &amp; Mervis experiment.</div></div>
+ <div class="vtrap"><div class="x"><b>✗ THE MISTAKE</b>"A robin is typical because we see so many robins."</div><div class="ok"><b>✓ CORRECT</b>Frequency matters only a little (Rosch, Simpson &amp; Miller, 1976). Typicality depends on family resemblance: sharing features with other members, and not with other categories. (A table and a rug are seen equally often, yet the table is far more typical.)</div></div>
+ <div class="vtrio"><div class="f"><b>💬 SAY IT TO A FRIEND</b>Some birds are just "birdier" than others. A robin is a great bird, a penguin a weird one, not because you see robins more, but because robins have what most birds have, and penguins have fish stuff like flippers.</div><div class="h"><b>🔑 MEMORY HOOK</b>Typical = looks like the family, not like the neighbours.</div><div class="t"><b>✎ EXAM TIP</b>Learn the two parts of family resemblance (frequent in own category; infrequent in other categories) and match each to one Rosch and Mervis (1975) experiment.</div></div>
  <div class="vwatch"><a target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=Rosch+prototype+typicality+family+resemblance">▶ Find a video: Rosch, typicality and family resemblance</a></div>
  <details class="vchk"><summary>✅ Quick check: Why is a bat a poor example of a mammal?</summary><p>(a) It lacks many features frequent in mammals (walking on four legs on the ground), and (b) it has a feature frequent in another category: flying with wings, typical of birds.</p></details>
+ <details class="vchk"><summary>✅ Quick check: How did Rosch &amp; Mervis (1975) test both parts of family resemblance?</summary><p>They made two new categories with arbitrary features. (a) Items with features common in their own category were learned <b>sooner</b> and later rated more typical. (b) Items sharing more features with the <b>other</b> category took <b>longer</b> to learn.</p></details>
 </article>
 
 <article class="vlec" id="vz-A3">
@@ -735,84 +751,123 @@ svg text{font-family:'DM Sans',sans-serif}
    <text x="280" y="326" text-anchor="middle" class="t-t">similar inside, different from neighbours (Murphy &amp; Brownell, 1985)</text>
    <text x="280" y="346" text-anchor="middle" class="t-s">brown bear → bear → mammal → vertebrate → animal → entity</text>
   </svg><figcaption>Figure A.3a. Category hierarchy and the preferred basic level.</figcaption></figure>
-  <ul class="vpts">
-   <li><b class="e">👶</b>Brown (1958): we say "chair", not "desk chair" or "furniture"; children's first words are basic.</li>
-   <li><b class="e">🏷️</b>Rosch et al. (1976): <b>1,595</b> basic names, <b>14</b> subordinate, <b>1</b> superordinate. Basic-level objects are identified fastest.</li>
-   <li><b class="e">🧩</b>Why: basic categories are most <b>differentiated</b>: members alike, different from other categories.</li>
-   <li><b class="e">🌍</b>It moves: less industrialised societies say <i>elm, trout, finch</i> (Berlin, 1992); experts say <i>sparrow</i>, not bird (Tanaka &amp; Taylor, 1991).</li>
-   <li><b class="e">❓</b>Mandler (2004): infants learn superordinates first? Murphy: not settled.</li>
-  </ul>
+  <div class="vsubs">
+   <div class="vsub"><b class="n">A.3.1</b><h5>Categories within categories</h5>
+  <p>🪜 Categories nest in <b>hierarchies</b>: brown bear → bear → mammal → vertebrate → animal → entity; desk chair → chair → furniture → artifact → object. Every object belongs to many categories at once. Which do we use?</p></div>
+   <div class="vsub"><b class="n">A.3.2</b><h5>The basic level: not too general, not too specific</h5>
+  <p>🏷️ Brown (1958): we say "chair". Rosch et al. (1976): <b>1,595</b> <b>basic level</b> names, <b>14</b> <b>subordinate</b>, only <b>once</b> a <b>superordinate</b>. Basic words are frequent in text (Wisniewski &amp; Murphy, 1989), <b>easier to learn</b> (Anglin, 1977) and <b>faster</b> to identify.</p></div>
+   <div class="vsub"><b class="n">A.3.3</b><h5>Why the basic level is basic, and why it moves</h5>
+  <p>🧩 Basic categories are most <b>differentiated</b>: members alike, unlike other categories (Murphy &amp; Brownell, 1985). Not fixed by nature: it moves up in industrialised societies (Berlin, 1992) and down for <b>experts</b> (Tanaka &amp; Taylor, 1991). It depends on <b>knowledge and interests</b>.</p></div>
+   </div>
  </div>
  <figure class="vfig"><svg viewBox="0 0 900 230" id="zBasic"></svg><figcaption>Figure A.3b. Rosch et al. (1976) <span class="bg">real data</span>: names people gave to pictures. Each square = 10 names (rounded); the lone dots are the 14 subordinate and 1 superordinate names.</figcaption></figure>
  <div class="vdemo"><span class="lbl">TRY IT · NAME IT FAST</span><h4>⚡ What is it?</h4><p class="mini">Click the first name that comes to mind for each picture.</p>
   <div class="nameopt" id="zNamePic">🐕</div><div style="text-align:center" id="zNameBtns"></div><div class="vout" id="zNameOut">Picture 1 / 5</div></div>
  <div class="vana"><div class="ae">🐻</div><div><b>THINK OF IT LIKE…</b>Goldilocks' porridge: "animal" is too cold (too vague to be useful), "northern brown bear" is too hot (too fussy to tell apart), "bear" is just right.</div></div>
- <div class="vtrap"><div class="x"><b>✗ THE MISTAKE</b>"The basic level is fixed by nature, the same for everyone."</div><div class="ok"><b>✓ CORRECT</b>It depends on knowledge and interests: more specific in less industrialised cultures and for experts.</div></div>
- <div class="vtrio"><div class="f"><b>💬 SAY IT TO A FRIEND</b>We prefer a middle level of naming, like "chair", because those groups are alike inside and different from other groups, but experts zoom in.</div><div class="h"><b>🔑 MEMORY HOOK</b>Basic = Goldilocks.</div><div class="t"><b>✎ EXAM TIP</b>Quote 1,595 / 14 / 1 and give the differentiation explanation.</div></div>
+ <div class="vtrap"><div class="x"><b>✗ THE MISTAKE</b>"The basic level is fixed by nature, the same for everyone."</div><div class="ok"><b>✓ CORRECT</b>The basic level depends on knowledge: it is more specific in less industrialised societies (Berlin, 1992) and for experts (Tanaka &amp; Taylor, 1991).</div></div>
+ <div class="vtrio"><div class="f"><b>💬 SAY IT TO A FRIEND</b>Everything belongs to several categories: your chair is also furniture and a desk chair. But you'd just say "chair". That middle level is the sweet spot: chairs look alike and look different from other stuff. Experts zoom in further, like a birdwatcher who sees a sparrow, not a bird.</div><div class="h"><b>🔑 MEMORY HOOK</b>Basic = Goldilocks: not too broad, not too narrow.</div><div class="t"><b>✎ EXAM TIP</b>Quote Rosch et al.'s (1976) naming counts (1,595 basic, 14 subordinate, 1 superordinate) and give the differentiation explanation (Murphy &amp; Brownell, 1985).</div></div>
  <div class="vwatch"><a target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=basic+level+categories+Rosch+1976">▶ Find a video: basic-level categories</a></div>
  <details class="vchk"><summary>✅ Quick check: Basic level for "smartphone" for a repair technician?</summary><p>Probably more specific (a particular model), because expertise makes finer categories more differentiated for them (Tanaka &amp; Taylor, 1991).</p></details>
+ <details class="vchk"><summary>✅ Quick check: Do infants learn superordinates first?</summary><p>Mandler (2004) argues they do. But then it is puzzling that older children struggle so much with superordinate words and with learning artificial superordinate categories (Horton &amp; Markman, 1980; Mervis, 1987). Murphy: the question is not yet settled.</p></details>
+ <details class="vchk"><summary>✅ Quick check: Why are superordinate and subordinate categories both less useful?</summary><p>Superordinate members have little in common (what do most pieces of furniture share?). Subordinates are too similar to their neighbours (desk chair vs dining chair vs easy chair), so they are hard to tell apart.</p></details>
 </article>
 
 <article class="vlec" id="vz-A4">
  <div class="vlec-h"><div class="vnum"><i>⚖️</i>A.4</div><h2>How concepts are represented: prototypes and exemplars</h2></div>
  <div class="vq">❓ <b>This lecture answers:</b> Is a concept one summary of the category, or a memory of many examples?</div>
+ <div class="vgrid">
+  <div class="vdemo" style="margin:0"><span class="lbl">INTERACTIVE · TWO THEORIES, ONE CLICK</span><h4>🎯 Click anywhere to classify a new creature</h4><p class="mini">Gold dots = remembered "glorps", blue dots = remembered "fribs" (invented categories). ★ marks each category's prototype (the average). Click a point: prototype theory picks the nearer ★; exemplar theory adds up similarity to every dot. Find a spot where they <b>disagree</b> (try near the lone gold dot on the right).</p>
+  <figure class="vfig"><svg viewBox="0 0 600 340" id="zPE" style="cursor:crosshair"></svg></figure>
+  <div class="vout" id="zPEout">Click inside the box.</div></div>
+  <div class="vsubs">
+   <div class="vsub"><b class="n">A.4.1</b><h5>Prototype theory: a summary of the category</h5>
+  <p>📋 <b>Prototype theory</b>: one <b>summary representation</b>, a list of <b>weighted features</b> (Smith &amp; Medin, 1981). <b>Typical</b> items match many high-weight features; <b>atypical</b> ones fewer; borderline items (edible seaweed) resemble several categories or none.</p></div>
+   <div class="vsub"><b class="n">A.4.2</b><h5>Exemplar theory: a memory of examples</h5>
+  <p>🗃️ <b>Exemplar theory</b> (Medin &amp; Schaffer, 1978): the concept is your remembered examples; add up similarity per category, highest total wins. Allen &amp; Brooks (1991): new items very like an old one were put in its category, even against a rule.</p></div>
+   <div class="vsub"><b class="n">A.4.3</b><h5>Which theory wins?</h5>
+  <p>⚖️ Exemplar theory wins most lab studies, but these repeat a few examples, and we also learn from general statements, so a <b>summary</b> is needed too. Many accept <b>multiple systems</b>: descriptions, memories of particular dogs, <b>rules</b> (a baseball strike) (Maddox &amp; Ashby, 2004).</p></div>
+   </div>
+ </div>
  <div class="cards2">
   <div style="background:#f6eedd"><b>📋 PROTOTYPE THEORY</b> (Smith &amp; Medin, 1981)<br>One <b>summary</b>: features weighted by how often they occur (wings, feathers: high; eats worms: lower; lives in Antarctica: low but not zero). Classify by matching to each summary.<br><span class="mini">Typical = many high-weight features. Borderline = resembles several summaries or none (edible seaweed).</span></div>
   <div style="background:#e3ecf7"><b>🗃️ EXEMPLAR THEORY</b> (Medin &amp; Schaffer, 1978)<br>No summary: the concept <b>is</b> the stored examples. Classify by <b>adding up similarity</b> to all examples of each category; highest total wins.<br><span class="mini">Allen &amp; Brooks (1991): a new item very similar to an old one is put in the old category, even against a rule.</span></div>
  </div>
- <div class="vdemo"><span class="lbl">INTERACTIVE · TWO THEORIES, ONE CLICK</span><h4>🎯 Click anywhere to classify a new creature</h4><p class="mini">Gold dots = remembered "glorps", blue dots = remembered "fribs" (invented categories). ★ marks each category's prototype (the average). Click a point: prototype theory picks the nearer ★; exemplar theory adds up similarity to every dot. Find a spot where they <b>disagree</b> (try near the lone gold dot on the right).</p>
-  <figure class="vfig"><svg viewBox="0 0 600 340" id="zPE" style="cursor:crosshair"></svg></figure>
-  <div class="vout" id="zPEout">Click inside the box.</div></div>
  <div class="tblw" style="overflow-x:auto"><table class="tb"><tr><th></th><th>📋 Prototype</th><th>🗃️ Exemplar</th></tr>
   <tr><td>Stored</td><td>One weighted summary</td><td>Many examples</td></tr>
+  <tr><td>Classify by</td><td>Matching the item to each summary</td><td>Adding up similarity to all stored examples per category</td></tr>
   <tr><td>Typicality</td><td>✅ many high-weight features</td><td>✅ resembles many examples</td></tr>
   <tr><td>Evidence</td><td>We learn from general statements ("Komodo dragons grow to 10 feet")</td><td>Allen &amp; Brooks (1991); wins most lab comparisons</td></tr>
-  <tr><td>Weak spot</td><td>Loses most lab comparisons</td><td>Labs repeat few examples; real life rarely does</td></tr></table></div>
+  <tr><td>Weak spot</td><td>Loses most lab comparisons</td><td>Labs repeat few examples; real life rarely does; general statements need a summary</td></tr></table></div>
  <div class="vcall">Many researchers now accept multiple systems: summaries, remembered examples and, for some categories, explicit rules (Maddox &amp; Ashby, 2004).</div>
  <div class="vana"><div class="ae">📸</div><div><b>THINK OF IT LIKE…</b>Prototype = one blended "average face" of all your friends. Exemplar = your whole photo album, flipped through every time you meet someone new.</div></div>
  <div class="vtrap"><div class="x"><b>✗ THE MISTAKE</b>Using "prototype" only for the most typical member.</div><div class="ok"><b>✓ CORRECT</b>Two uses: the most typical member (A.2) <b>and</b> the theory that a concept is a summary of weighted features (A.4).</div></div>
- <div class="vtrio"><div class="f"><b>💬 SAY IT TO A FRIEND</b>Either your brain keeps one average idea of "bird", or it keeps all the birds you've met and compares. Probably both.</div><div class="h"><b>🔑 MEMORY HOOK</b>Prototype = one average; exemplar = many examples.</div><div class="t"><b>✎ EXAM TIP</b>Allen &amp; Brooks (1991) is the classic exemplar result; general statements need a summary.</div></div>
+ <div class="vtrio"><div class="f"><b>💬 SAY IT TO A FRIEND</b>There are two ideas about what's in your head when you think "bird". Either one summary, like a checklist of bird-ish features with some ticked harder than others, or all the birds you've ever seen, and you compare new things to them. Probably we use both.</div><div class="h"><b>🔑 MEMORY HOOK</b>Prototype = one average; exemplar = many examples.</div><div class="t"><b>✎ EXAM TIP</b>For any finding, ask what each theory predicts. Allen and Brooks (1991) is the classic exemplar result; learning from general statements needs a summary.</div></div>
  <div class="vwatch"><a target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=prototype+vs+exemplar+theory+categorization">▶ Find a video: prototype vs exemplar theory</a></div>
  <details class="vchk"><summary>✅ Quick check: A child calls a cow "dog" because it looks like the family dog. Which theory?</summary><p>Exemplar theory: the cow is very similar to one strongly remembered example (the family dog), so it lands in that category.</p></details>
+ <details class="vchk"><summary>✅ Quick check: How does prototype theory handle edible seaweed?</summary><p>Borderline items may resemble several categories, or none: seaweed has few vegetable features but is not close to meat, fish or fruit either, so it matches no summary well and you feel unsure.</p></details>
+ <details class="vchk"><summary>✅ Quick check: Why does Allen &amp; Brooks (1991) support exemplar theory?</summary><p>People had learned a rule, yet a new item that closely resembled an old one was put in the old item's category, against the rule. Similarity to a remembered example won, as an exemplar process predicts.</p></details>
 </article>
 
 <article class="vlec" id="vz-A5">
  <div class="vlec-h"><div class="vnum"><i>🦝</i>A.5</div><h2>Knowledge, essentialism and culture</h2></div>
  <div class="vq">❓ <b>This lecture answers:</b> How does world knowledge shape concepts, and why do people believe in hidden essences?</div>
- <div class="cards2">
-  <div style="background:#eaf6ee"><b>🌊 DONKER</b> (makes sense)<br>thick windows · red · divers live in it · under water · reached by submarine · fish as pets<br><span class="ok pill-ok" style="background:#2f8a57;color:#fff">learned MUCH faster</span></div>
-  <div style="background:#fbecea"><b>🏜️ BLEGDAV</b> (no sense)<br>steel windows · purple · farmers live in it · in the desert · reached by submarine · polar bears as pets<br><span class="pill-ok" style="background:#c0392b;color:#fff">learned slowly</span></div>
+  <div class="vgrid">
+  <figure class="vfig"><svg viewBox="0 0 560 500" role="img" aria-label="Knowledge approach and essentialism">
+   <text x="280" y="24" text-anchor="middle" class="t-h">What you already know shapes your concepts</text>
+   <text x="14" y="50" class="t-g">① KNOWLEDGE APPROACH · Murphy &amp; Allopenna (1994)</text>
+   <rect x="10" y="60" width="262" height="198" rx="14" fill="#eaf6ee"/>
+   <text x="141" y="80" text-anchor="middle" class="t-b">🌊 DONKER · makes sense</text>
+   <g stroke="#2f8a57" stroke-width="2"><line x1="76" y1="113" x2="112" y2="143"/><line x1="206" y1="113" x2="170" y2="143"/><line x1="76" y1="200" x2="112" y2="173"/><line x1="206" y1="200" x2="170" y2="173"/></g>
+   <ellipse cx="141" cy="158" rx="60" ry="20" fill="#fff" stroke="#2f8a57" stroke-width="2"/>
+   <text x="141" y="162" text-anchor="middle" class="t-b">deep-sea base</text>
+   <text x="76" y="108" text-anchor="middle" class="t-s">under water</text><text x="206" y="108" text-anchor="middle" class="t-s">by submarine</text>
+   <text x="141" y="194" text-anchor="middle" class="t-s">thick windows</text>
+   <text x="76" y="212" text-anchor="middle" class="t-s">divers live in it</text><text x="206" y="212" text-anchor="middle" class="t-s">fish as pets</text>
+   <text x="141" y="232" text-anchor="middle" class="t-s" font-style="italic">red: unrelated, learned less well</text>
+   <text x="141" y="250" text-anchor="middle" class="t-ok">✅ learned MUCH faster</text>
+   <rect x="288" y="60" width="262" height="198" rx="14" fill="#fbecea"/>
+   <text x="419" y="80" text-anchor="middle" class="t-b">🏜️ BLEGDAV · no sense</text>
+   <g stroke="#c0392b" stroke-width="2" stroke-dasharray="5 4"><line x1="354" y1="113" x2="390" y2="143"/><line x1="484" y1="113" x2="448" y2="143"/><line x1="354" y1="200" x2="390" y2="173"/><line x1="484" y1="200" x2="448" y2="173"/></g>
+   <ellipse cx="419" cy="158" rx="60" ry="20" fill="#fff" stroke="#c0392b" stroke-width="2" stroke-dasharray="5 4"/>
+   <text x="419" y="162" text-anchor="middle" class="t-r">??? no idea</text>
+   <text x="354" y="108" text-anchor="middle" class="t-s">in the desert</text><text x="419" y="108" text-anchor="middle" class="t-r">✗</text><text x="484" y="108" text-anchor="middle" class="t-s">by submarine</text>
+   <text x="354" y="212" text-anchor="middle" class="t-s">farmers live in it</text><text x="419" y="212" text-anchor="middle" class="t-r">✗</text><text x="484" y="212" text-anchor="middle" class="t-s">polar bears as pets</text>
+   <text x="419" y="232" text-anchor="middle" class="t-s" font-style="italic">steel windows · purple</text>
+   <text x="419" y="250" text-anchor="middle" class="t-r">❌ learned slowly</text>
+   <text x="280" y="280" text-anchor="middle" class="t-s">Knowledge helps: tablets were understood quickly via laptops and phones.</text>
+   <text x="280" y="296" text-anchor="middle" class="t-s">Knowledge misleads: people expected a tablet to do what their phone did.</text>
+   <text x="14" y="324" class="t-g">② PSYCHOLOGICAL ESSENTIALISM · Keil (1989)</text>
+   <rect x="10" y="334" width="262" height="104" rx="14" fill="#f6eedd"/>
+   <text x="62" y="380" font-size="34">🦝</text><text x="118" y="376" font-size="22">➡️</text><text x="160" y="380" font-size="34">🦨</text>
+   <text x="141" y="408" text-anchor="middle" class="t-ok">"Still a RACCOON"</text>
+   <text x="141" y="426" text-anchor="middle" class="t-s">natural kind → hidden essence</text>
+   <rect x="288" y="334" width="262" height="104" rx="14" fill="#e3ecf7"/>
+   <text x="340" y="380" font-size="34">☕</text><text x="396" y="376" font-size="22">➡️</text><text x="438" y="380" font-size="34">🐦</text>
+   <text x="419" y="408" text-anchor="middle" class="t-r">"Now a BIRD FEEDER"</text>
+   <text x="419" y="426" text-anchor="middle" class="t-s">artifact → no essence, function decides</text>
+   <rect x="10" y="448" width="540" height="46" rx="12" fill="#fcfaf5" stroke="#c9a96e"/>
+   <text x="280" y="467" text-anchor="middle" class="t-b">3 signs of essentialism</text>
+   <text x="280" y="485" text-anchor="middle" class="t-t">① in or out, nothing between · ② resists changes · ③ passed on to offspring</text>
+  </svg><figcaption>Figure A.5. Concepts must make sense (A.5.1), and natural kinds seem to have a hidden essence (A.5.2).</figcaption></figure>
+  <div class="vsubs">
+   <div class="vsub"><b class="n">A.5.1</b><h5>The knowledge approach: concepts must make sense</h5>
+  <p>🏗️ <b>Knowledge approach</b>: we link new concepts to what we know. Murphy &amp; Allopenna (1994): a sensible <b>donker</b> (under water, reached by submarine) is learned <b>much faster</b> than a nonsensical <b>blegdav</b> (desert, submarine, polar bears). Knowledge helps (tablets) and misleads.</p></div>
+   <div class="vsub"><b class="n">A.5.2</b><h5>Psychological essentialism</h5>
+  <p>🧬 <b>Psychological essentialism</b> (Gelman, 2003; Medin &amp; Ortony, 1989): belief that something hidden <b>beneath</b> <b>natural kinds</b> <b>causes</b> their features. Keil (1989): a raccoon made to look like a skunk is still a <b>raccoon</b>; a rebuilt coffeepot <b>is</b> a bird feeder.</p></div>
+   <div class="vsub"><b class="n">A.5.3</b><h5>Concepts across cultures, and the conclusion</h5>
+  <p>🌏 Cultures differ somewhat (Norenzayan et al., 2002) but share many categories, so differences may be smaller than experiments suggest. Conclusion: we learn "baby" from <b>exemplars</b>, <b>general descriptions</b>, <b>general knowledge</b> and <b>rules</b>, probably in different brain structures (Maddox &amp; Ashby, 2004).</p></div>
+   </div>
  </div>
- <p class="mini">Murphy &amp; Allopenna (1994): concepts that fit world knowledge are learned faster, and connected features (under water + submarine) better than unrelated ones (red). This is the <b>knowledge approach</b>.</p>
- <div class="vgrid">
-  <figure class="vfig"><svg viewBox="0 0 560 330">
-   <text x="280" y="24" text-anchor="middle" class="t-h">Keil (1989): essences resist surgery</text>
-   <rect x="20" y="44" width="250" height="180" rx="14" fill="#f6eedd"/>
-   <text x="145" y="66" text-anchor="middle" class="t-b">🦝 raccoon + dye + smelly sac</text>
-   <text x="80" y="128" font-size="44">🦝</text><text x="140" y="124" font-size="26">➡️</text><text x="180" y="128" font-size="44">🦨</text>
-   <text x="145" y="170" text-anchor="middle" class="t-ok">"Still a RACCOON"</text>
-   <text x="145" y="190" text-anchor="middle" class="t-s">adults and children over 4</text><text x="145" y="208" text-anchor="middle" class="t-s">natural kind → hidden essence</text>
-   <rect x="290" y="44" width="250" height="180" rx="14" fill="#e3ecf7"/>
-   <text x="415" y="66" text-anchor="middle" class="t-b">☕ coffeepot rebuilt</text>
-   <text x="350" y="128" font-size="44">☕</text><text x="408" y="124" font-size="26">➡️</text><text x="448" y="128" font-size="44">🐦</text>
-   <text x="415" y="170" text-anchor="middle" class="t-r">"Now a BIRD FEEDER"</text>
-   <text x="415" y="190" text-anchor="middle" class="t-s">artifact → no essence,</text><text x="415" y="208" text-anchor="middle" class="t-s">function decides</text>
-   <rect x="20" y="238" width="520" height="80" rx="14" fill="#fcfaf5" stroke="#c9a96e"/>
-   <text x="280" y="262" text-anchor="middle" class="t-b">3 signs of essentialism</text>
-   <text x="280" y="284" text-anchor="middle" class="t-t">① in or out, nothing between · ② resist changes in membership</text>
-   <text x="280" y="304" text-anchor="middle" class="t-t">③ essence passed on to offspring</text>
-  </svg><figcaption>Figure A.5. Natural kinds keep their essence; artifacts don't.</figcaption></figure>
-  <ul class="vpts">
-   <li><b class="e">🧬</b><b>Psychological essentialism</b> (Gelman, 2003; Medin &amp; Ortony, 1989): belief in a hidden property that causes a natural kind's features ("a dog gene").</li>
-   <li><b class="e">⚠️</b>Harmful for people: treating gender, racial and ethnic groups as having essences exaggerates differences (Hirschfeld, 1996), e.g. "bad blood".</li>
-   <li><b class="e">🌏</b>Cultures differ somewhat (Norenzayan et al., 2002) but share many categories (chairs, dogs, parties, jars).</li>
-   <li><b class="e">🧺</b>Murphy's conclusion: concepts combine <b>exemplars</b>, <b>general descriptions</b>, <b>world knowledge</b> and sometimes <b>rules</b>.</li>
-  </ul>
- </div>
- <div class="vdemo"><span class="lbl">VOTE · WHAT IS IT NOW?</span><h4>🗳️ Keil-style transformations</h4><div id="zKeil"></div><div class="vout" id="zKeilOut"></div></div>
+ <div class="vdemo"><span class="lbl">TRY IT · THE KNOWLEDGE APPROACH (A.5.1)</span><h4>🏗️ Does it make sense? Think like Murphy &amp; Allopenna</h4><p class="mini">Tap an answer for each row. All examples are from your Word notes.</p><div id="zKA"></div><div class="vout" id="zKAOut"></div></div>
+ <div class="vdemo"><span class="lbl">VOTE · WHAT IS IT NOW? (A.5.2)</span><h4>🗳️ Keil-style transformations</h4><p class="mini">Rows 1–2 are Keil's (1989) two conditions; row 3 is an <span class="bg">illustrative</span> case taken from the Word check question.</p><div id="zKeil"></div><div class="vout" id="zKeilOut"></div></div>
+ <div class="vdemo"><span class="lbl">SORT IT · MURPHY'S CONCLUSION (A.5.3)</span><h4>👶 Four ways you learn the concept "baby"</h4><p class="mini">You visit a friend's new baby and already know what to expect. Where does each piece of knowledge come from? (Murphy's example)</p><div id="zBaby"></div><div class="vout" id="zBabyOut"></div>
+  <p class="mini">🧠 These processes are probably carried out by different brain structures (Maddox &amp; Ashby, 2004). 🌏 Across cultures: some suggest Eastern and Western modes of thought lead to qualitatively different concepts (Norenzayan, Smith, Kim &amp; Nisbett, 2002), but cultures also share many categories (chairs, dogs, parties, jars) because the structure of the world limits which categories are useful. So the differences may be smaller than experiments designed to detect them suggest.</p></div>
  <div class="vtrap"><div class="x"><b>✗ THE MISTAKE</b>"Essentialism is just the classical view again."</div><div class="ok"><b>✓ CORRECT</b>Both give sharp boundaries, but the classical view uses visible defining features; essentialism a hidden cause that may not show at all (Keil's raccoon).</div></div>
- <div class="vtrio"><div class="f"><b>💬 SAY IT TO A FRIEND</b>We learn concepts faster when they make sense, and we believe animals have a hidden "inner nature" that a costume can't change.</div><div class="h"><b>🔑 MEMORY HOOK</b>Raccoons keep their essence; coffeepots don't.</div><div class="t"><b>✎ EXAM TIP</b>Give Keil with both conditions plus the three signs.</div></div>
+ <div class="vtrio"><div class="f"><b>💬 SAY IT TO A FRIEND</b>Concepts have to make sense: an underwater building you reach by submarine is easy to learn, a desert building with polar bears isn't. And people think animals have a hidden "essence": paint a raccoon to look like a skunk and everyone still says it's a raccoon, but rebuild a coffeepot into a bird feeder and it's a bird feeder.</div><div class="h"><b>🔑 MEMORY HOOK</b>Raccoons keep their essence; coffeepots don't.</div><div class="t"><b>✎ EXAM TIP</b>For essentialism, give Keil (1989) with both conditions (raccoon versus coffeepot) and the three signs of essentialism.</div></div>
  <div class="vwatch"><a target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=psychological+essentialism+Keil+raccoon+skunk">▶ Find a video: essentialism and Keil's raccoon</a></div>
+ <details class="vchk"><summary>✅ Quick check: Why can't prototype and exemplar theories alone predict Murphy &amp; Allopenna (1994)?</summary><p>They put no limits on which features you learn: every feature is just a feature. The donker is easier only because its features fit together with world knowledge, which those theories leave out.</p></details>
+ <details class="vchk"><summary>✅ Quick check: Why is Keil's coffeepot condition important?</summary><p>It shows people do not simply refuse every transformation: a rebuilt coffeepot <b>is</b> a bird feeder. Only the natural kind (raccoon) keeps its identity, so people treat natural kinds, not artifacts, as having an essence.</p></details>
+ <details class="vchk"><summary>✅ Quick check: When does essentialism become harmful?</summary><p>When it is applied to people. Treating gender, racial and ethnic groups as having essences exaggerates group differences and can be used to justify discrimination (Hirschfeld, 1996), as in the old belief in "bad blood".</p></details>
 </article>
 
 <!-- BLOCK B -->
@@ -836,21 +891,25 @@ svg text{font-family:'DM Sans',sans-serif}
    <text x="415" y="160" text-anchor="middle" class="t-t">"A cat has skin"</text><rect x="330" y="170" width="150" height="18" rx="5" fill="#c0392b"/><text x="486" y="184" class="t-s">slow</text>
    <text x="415" y="224" text-anchor="middle" class="t-s">feature proximity to the concept</text>
   </svg><figcaption>Figure B.1. Accuracy is near perfect; speed is the measure. <span class="bg">illustrative</span> bar lengths.</figcaption></figure>
-  <ul class="vpts">
-   <li><b class="e">🕸️</b><b>Semantic network</b>: concepts = nodes; relations = links. "Close" means close in meaning.</li>
-   <li><b class="e">🧠</b>Not a <b>neural network</b>: there's no "canary neuron". Semantic networks are a metaphor; both share excitatory connections.</li>
-   <li><b class="e">⚙️</b>Collins &amp; Loftus (1975): activate → spreads → fades with time/distance → divides → summed → threshold.</li>
-   <li><b class="e">🍋</b><b>Semantic priming</b>: "yellow" gives "lemon" a head start, so it's recognised faster.</li>
-  </ul>
+  <div class="vsubs">
+   <div class="vsub"><b class="n">B.1.1</b><h5>The question, and how to test it</h5>
+  <p>⏱️ How is knowledge <b>acquired, stored and retrieved</b>? In a <b>category verification task</b> ("A robin is a bird") or <b>feature verification task</b> ("A cat has skin") the measure is <b>speed</b>: robin beats penguin, pointy ears beat skin (<b>proximity</b>).</p></div>
+   <div class="vsub"><b class="n">B.1.2</b><h5>Semantic networks</h5>
+  <p>🕸️ A <b>semantic network</b> stores concepts as <b>nodes</b> joined by meaningful links ("close" = close in meaning). It is <b>not</b> a <b>neural network</b>: there is no "canary neuron". Both share <b>excitatory connections</b>.</p></div>
+   <div class="vsub"><b class="n">B.1.3</b><h5>Spreading activation and semantic priming</h5>
+  <p>⚙️ <b>Spreading activation model</b> (Collins &amp; Loftus, 1975): a presented node is <b>activated</b>; activation spreads, <b>decreases</b> with time and distance, gives <b>less</b> to each of many nodes, and is <b>summed</b> to a <b>threshold</b>. This explains <b>semantic priming</b>.</p></div>
+   </div>
  </div>
- <div class="vdemo"><span class="lbl">INTERACTIVE · SEMANTIC PRIMING</span><h4>⏱️ Word or not?</h4><p class="mini">A prime word flashes, then a target. Press <b>Word</b> or <b>Not a word</b> as fast as you can. After 16 trials we compare your speed for targets after a <b>related</b> vs an <b>unrelated</b> prime.</p>
+ <div class="vdemo"><span class="lbl">INTERACTIVE · SEMANTIC PRIMING</span><h4>⏱️ Word or not?</h4><p class="mini">A prime word flashes, then a target. Press <b>Word</b> or <b>Not a word</b> as fast as you can. After 16 trials we compare your speed for targets after a <b>related</b> vs an <b>unrelated</b> prime. <span class="bg">illustrative</span> word pairs.</p>
   <div class="lexw" id="zLex">ready?</div>
   <div style="text-align:center;margin-top:8px"><button class="vbtn p" id="zLexGo">▶ Start</button><button class="vbtn" id="zLexW" disabled>✔ Word (W)</button><button class="vbtn" id="zLexN" disabled>✖ Not a word (N)</button></div>
   <div class="vout" id="zLexOut"></div></div>
  <div class="vana"><div class="ae">💡</div><div><b>THINK OF IT LIKE…</b>Christmas lights wired together: switch on "yellow" and the bulbs nearby (sun, lemon, canary) glow a little, so they flash on faster when it's their turn. Bulbs far away barely flicker.</div></div>
  <div class="vtrap"><div class="x"><b>✗ THE MISTAKE</b>"Faster verification of robin is a new effect, separate from Block A."</div><div class="ok"><b>✓ CORRECT</b>It is the typicality effect (Rips, Shoben &amp; Smith, 1973), now explained as a short link in the network.</div></div>
- <div class="vtrio"><div class="f"><b>💬 SAY IT TO A FRIEND</b>Your knowledge is a web of linked ideas. Thinking of one idea warms up the ones next to it, so you recognise them faster.</div><div class="h"><b>🔑 MEMORY HOOK</b>Yellow lights up lemon.</div><div class="t"><b>✎ EXAM TIP</b>List all four processing assumptions of Collins &amp; Loftus and use them to explain priming.</div></div>
+ <div class="vtrio"><div class="f"><b>💬 SAY IT TO A FRIEND</b>Your knowledge is like a web of ideas. Hear "yellow", and "lemon", "sun" and "canary" light up a bit, so you'll recognise "lemon" faster a second later. And "robin is a bird" is quicker to confirm than "penguin is a bird" because robin sits closer to bird in the web.</div><div class="h"><b>🔑 MEMORY HOOK</b>Closer in the web = faster to verify; activation spreads, fades and adds up.</div><div class="t"><b>✎ EXAM TIP</b>Know the four processing assumptions of Collins and Loftus (1975) and use them to explain semantic priming step by step.</div></div>
  <div class="vwatch"><a target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=Collins+Loftus+spreading+activation+semantic+network">▶ Find a video: spreading activation</a><a target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=semantic+priming+lexical+decision+task">▶ Find a video: semantic priming</a></div>
+ <details class="vchk"><summary>✅ Quick check: Why is speed, not accuracy, the measure in verification tasks?</summary><p>The questions are easy and people almost never err unless they rush, so accuracy hardly varies. Speed does vary, and it reveals how closely a concept or feature is linked to the category.</p></details>
+ <details class="vchk"><summary>✅ Quick check: Why would "doctor" speed up "nurse" but not "bread"?</summary><p>Doctor and nurse are linked in the network, so activation spreads from doctor and gives nurse a head start towards its threshold. Bread is not linked to doctor, so it receives no extra activation.</p></details>
 </article>
 
 <article class="vlec" id="vz-B2">
@@ -872,25 +931,35 @@ svg text{font-family:'DM Sans',sans-serif}
    <rect x="20" y="124" width="520" height="70" rx="14" fill="#f6eedd"/><text x="40" y="152" class="t-b">② Graded structure (typicality)</text><text x="40" y="176" class="t-t">🛋️ table, chair, couch are more "furniture-y"</text>
    <rect x="20" y="204" width="520" height="70" rx="14" fill="#e3ecf7"/><text x="40" y="232" class="t-b">③ Fuzzy boundaries</text><text x="40" y="256" class="t-t">🎳 Is bowling a sport? "Sort of", which the classical view can't allow</text>
   </svg><figcaption>Figure B.2b. The same verdict Murphy reached in A.1–A.2, with new examples.</figcaption></figure>
-  <ul class="vpts">
-   <li><b class="e">🧱</b>Concepts are "building blocks of thought": shorthand, prediction (reality shows), learning, communication.</li>
-   <li><b class="e">📏</b><b>Classical</b> (Bruner, Goodnow &amp; Austin, 1956): triangle works; most concepts don't.</li>
-   <li><b class="e">⭐</b><b>Prototype</b>: likely features; solves all 3 problems. But fails on <b>correlated features</b> (small birds sing), <b>context</b> (campfire instrument = guitar) and <b>pet fish</b> (guppy).</li>
-   <li><b class="e">🗃️</b><b>Exemplar</b>: handles typicality, context, correlations. But Posner's unseen prototype and <b>economy</b> (Komatsu, 1992).</li>
-   <li><b class="e">🔬</b><b>Essentialist</b> (Medin &amp; Ortony, 1989): top-down theory of the essence. Rips (1989) excerpt cut off; use Keil (A.5).</li>
-  </ul>
+  <div class="vsubs">
+   <div class="vsub"><b class="n">B.2.1</b><h5>What concepts do for us</h5>
+  <p>🧱 "Building blocks of thought" (Solomon, Medin &amp; Lynch, 1999). Concepts are a <b>mental shorthand</b> for <b>understanding</b>, and support <b>predictions</b> (a reality show has a prize), learning and communication (Medin &amp; Rips, 2005).</p></div>
+   <div class="vsub"><b class="n">B.2.2</b><h5>Types of categories</h5>
+  <p>🌹 From most to least similar members (Goldstone &amp; Kersten, 2003): <b>natural kinds</b> (flowers), <b>artifacts</b> (tools), <b>ad hoc categories</b> (things to take on vacation; Barsalou, 1983), <b>metaphorical concepts</b> (an emotional prison).</p></div>
+   <div class="vsub"><b class="n">B.2.3</b><h5>The classical view, and its three problems</h5>
+  <p>📏 <b>Similarity-based approaches</b> compare an item with a stored standard. The <b>classical view</b> uses <b>necessary and sufficient</b> features (Bruner et al., 1956). Three flaws: no defining features, the <b>typicality effect</b> (Rosch, 1973), fuzzy boundaries.</p></div>
+   <div class="vsub"><b class="n">B.2.4</b><h5>The prototype approach and Posner’s dot patterns</h5>
+  <p>⭐ <b>Prototype approach</b>: features members are <b>likely</b> to have; <b>family resemblance</b> to an abstracted prototype. Posner et al. (1967): an unseen prototype was "recognised". Problems: features that <b>go together</b> (Mervis &amp; Rosch, 1981), context (Roth &amp; Shoben, 1983), <b>conceptual combination</b> (Hampton, 1993).</p></div>
+   <div class="vsub"><b class="n">B.2.5</b><h5>The exemplar approach</h5>
+  <p>🗃️ <b>Exemplar approach</b>: stored examples, chosen by context (Ross &amp; Spalding, 1994). Explains typicality, context and correlations (Malt &amp; Smith, 1984). Problems: Posner's unseen prototype; economy (Komatsu, 1992). People use both (Malt, 1989).</p></div>
+   <div class="vsub"><b class="n">B.2.6</b><h5>The essentialist approach: concepts as theories</h5>
+  <p>🔬 The three views above are <b>bottom-up</b>. <b>Essentialist approaches</b> are <b>top-down</b>: a <b>theory</b> of the hidden <b>essence</b> (Medin &amp; Ortony, 1989). Rips (1989): the excerpt ends mid-sentence, so use Keil (A.5).</p></div>
+   </div>
  </div>
- <div class="vdemo"><span class="lbl">INTERACTIVE · POSNER, GOLDSMITH &amp; WELTON (1967)</span><h4>🔵 Study these dot patterns</h4><p class="mini">Look at the 6 patterns for 12 seconds. Then 4 patterns appear: click the one you think you saw before.</p>
+ <div class="vdemo"><span class="lbl">INTERACTIVE · POSNER, GOLDSMITH &amp; WELTON (1967)</span><h4>🔵 Study these dot patterns</h4><p class="mini">Look at the 6 patterns for 12 seconds. Then 4 patterns appear: click the one you think you saw before. In the real study every studied pattern was a <b>distortion</b> of a prototype that was <b>never shown</b>, yet people confidently "recognised" the prototype: they had been <b>abstracting</b> the average during study.</p>
   <button class="vbtn p" id="zPosGo">▶ Start</button><div class="dots" id="zPos"></div><div class="vout" id="zPosOut"></div></div>
  <div class="tblw" style="overflow-x:auto"><table class="tb"><tr><th>Approach</th><th>Compares with…</th><th>Solves</th><th>Problems</th></tr>
-  <tr><td>📏 Classical</td><td>Necessary &amp; sufficient features</td><td>Well-defined concepts (triangle)</td><td>No defining features; typicality; fuzzy</td></tr>
-  <tr><td>⭐ Prototype</td><td>Abstracted average</td><td>All 3 classical problems; Posner (1967)</td><td>Correlated features; context; pet fish</td></tr>
-  <tr><td>🗃️ Exemplar</td><td>Stored examples</td><td>Typicality; context; correlations (Malt &amp; Smith, 1984)</td><td>Unseen prototype; economy</td></tr>
-  <tr><td>🔬 Essentialist</td><td>Theory of the hidden essence</td><td>Classification beyond surface similarity</td><td>Excerpt ends; see A.5</td></tr></table></div>
- <div class="vana"><div class="ae">🐟</div><div><b>THINK OF IT LIKE…</b>A "pet fish" is a goldfish, but a goldfish is neither the typical pet (dog) nor the typical fish (trout). Combining concepts doesn't just average two prototypes, which is a problem for prototype theory.</div></div>
- <div class="vtrap"><div class="x"><b>✗ THE MISTAKE</b>"Blocks A and B describe different theories."</div><div class="ok"><b>✓ CORRECT</b>Same theories (prototype, exemplar, essentialism); Block B adds the classical view's formal problems, Posner (1967) and each theory's extra problems.</div></div>
- <div class="vtrio"><div class="f"><b>💬 SAY IT TO A FRIEND</b>Strict definitions fail, averages and example-collections each explain some things, and people also use beliefs about what things really are.</div><div class="h"><b>🔑 MEMORY HOOK</b>The boundary between the theories is "definitely fuzzy!"</div><div class="t"><b>✎ EXAM TIP</b>Correlated features: problem for prototypes (one average loses them), solved by exemplars (every encounter stored).</div></div>
+  <tr><td>📏 Classical</td><td>Necessary &amp; sufficient features (Bruner et al., 1956)</td><td>Well-defined concepts (triangle)</td><td>No defining features; typicality; fuzzy</td></tr>
+  <tr><td>⭐ Prototype</td><td>Abstracted average / best example</td><td>All 3 classical problems; Posner et al. (1967)</td><td>Correlated properties (Mervis &amp; Rosch, 1981); context (Roth &amp; Shoben, 1983); pet fish (Hampton, 1993)</td></tr>
+  <tr><td>🗃️ Exemplar</td><td>Stored individual examples</td><td>Typicality; context; correlations (Malt &amp; Smith, 1984)</td><td>Posner's unseen prototype; economy (Komatsu, 1992)</td></tr>
+  <tr><td>🔬 Essentialist</td><td>Theory of the hidden essence</td><td>Categorisation beyond surface similarity (Rips, 1989)</td><td>Excerpt ends here; see A.5 for essentialism evidence</td></tr></table></div>
+ <div class="vana"><div class="ae">🐟</div><div><b>THINK OF IT LIKE…</b>The typical "pet fish" is a guppy or goldfish, but neither is a prototype of "pet" or of "fish" (Hampton, 1993). Combining concepts doesn't just average two prototypes, which is a problem for prototype theory.</div></div>
+ <div class="vtrap"><div class="x"><b>✗ THE MISTAKE</b>"Blocks A and B describe different theories."</div><div class="ok"><b>✓ CORRECT</b>They describe the same theories: Murphy's prototype and exemplar theories (A.4) and essentialism (A.5) are Robinson-Riegler's prototype, exemplar and essentialist approaches (B.2). Block B adds the classical view's formal problems, Posner et al. (1967) and each theory's extra problems.</div></div>
+ <div class="vtrio"><div class="f"><b>💬 SAY IT TO A FRIEND</b>There are four ideas about what a concept is: a strict definition, an average "best example", a pile of remembered examples, or a theory about what something really is deep down. Definitions mostly fail. Prototypes and examples each win some battles, and people probably use both.</div><div class="h"><b>🔑 MEMORY HOOK</b>Classical fails; prototype averages; exemplar remembers; essence explains.</div><div class="t"><b>✎ EXAM TIP</b>For each approach, learn one supporting finding and one problem: prototype (Posner; correlated properties), exemplar (context, correlations; Posner, economy).</div></div>
  <div class="vwatch"><a target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=Posner+dot+pattern+prototype+abstraction+experiment">▶ Find a video: Posner's dot patterns</a><a target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=ad+hoc+categories+Barsalou">▶ Find a video: ad hoc categories</a></div>
+ <details class="vchk"><summary>✅ Quick check: Why are prototype members processed faster?</summary><p>The most representative members are accessed more quickly, learned faster and more easily <b>primed</b> by the category name. In network terms, the distance between the category label and its prototype is short.</p></details>
+ <details class="vchk"><summary>✅ Quick check: Why is Posner et al. (1967) a problem for the extreme exemplar approach?</summary><p>People "recognised" a prototype they had never seen, so there was no stored exemplar of it to retrieve. They must have abstracted a summary during study.</p></details>
+ <details class="vchk"><summary>✅ Quick check: Summer: "lemonade" is a typical drink; winter: "hot chocolate". Which approach explains this best?</summary><p>The exemplar approach: context primes certain stored examples (just as December brings "Jingle Bells" to mind as a song). A single fixed prototype cannot shift with context (Roth &amp; Shoben, 1983).</p></details>
 </article>
 
 <!-- BLOCK C -->
@@ -907,13 +976,14 @@ svg text{font-family:'DM Sans',sans-serif}
    <text x="280" y="296" text-anchor="middle" class="t-r">LOST: vocabulary, comprehension, concepts</text>
    <text x="280" y="318" text-anchor="middle" class="t-ok">SPARED: fluent speech, visuospatial skill, problem solving, day-to-day memory</text>
   </svg><figcaption>Figure C.1a. A very selective, modality-independent loss of meaning. <span class="bg">illustrative</span></figcaption></figure>
-  <ul class="vpts">
-   <li><b class="e">🔧</b>Watch a system break to learn how it's built.</li>
-   <li><b class="e">🔁</b><b>Item consistency</b>: the same items fail across tasks and modalities → one central, amodal system (Bozeat et al., 2000).</li>
-   <li><b class="e">🪜</b><b>Hierarchical view</b> (Warrington, 1975): duck → "swan" → "bird" → "animal" over 18 months (Hodges et al., 1995).</li>
-   <li><b class="e">🧶</b><b>Feature-based view</b>: categories emerge from shared features; typicality = similarity to the category average (Garrard et al., 2001). Networks without a hierarchy show the same decline (Rogers et al., 2002a).</li>
-   <li><b class="e">⚖️</b>Features run from <b>distinctive</b> (mallard's green feathers) to <b>shared</b> (wings). Living things have more shared features.</li>
-  </ul>
+  <div class="vsubs">
+   <div class="vsub"><b class="n">C.1.1</b><h5>Why study a disease to understand concepts?</h5>
+  <p>🔧 <b>Semantic dementia</b> (temporal lobe atrophy) causes a <b>very selective</b> loss of <b>semantic memory</b>. The same items fail in every task (<b>item consistency</b>), <b>independent of modality</b>: evidence for a <b>unitary, central system</b> (Caramazza et al., 1990).</p></div>
+   <div class="vsub"><b class="n">C.1.2</b><h5>Two views of how semantic memory is structured</h5>
+  <p>🪜 <b>Hierarchical</b> (Warrington, 1975): duck → swan → bird → animal (Hodges et al., 1995). <b>Feature-based</b>: categories emerge from shared features; typicality = closeness to the <b>average (centroid)</b> (Garrard et al., 2001). <b>Living things have more shared features than artefacts</b>.</p></div>
+   <div class="vsub"><b class="n">C.1.3</b><h5>Why use drawing as a test?</h5>
+  <p>✏️ Drawing is <b>non-verbal feature listing</b>: it avoids <b>anomia</b>, is easy and gives rich data. Drawbacks: drawing skill, and "looks good" says nothing about <b>content</b>. Fix: features most controls draw = targets (Lambon Ralph et al., 1998).</p></div>
+   </div>
  </div>
  <div class="vdemo"><span class="lbl">ANIMATION · 18 MONTHS IN 4 STEPS</span><h4>🦆 How one patient named a duck (Hodges, Graham &amp; Patterson, 1995)</h4>
   <input type="range" id="zDuckT" min="1" max="4" value="1"><div style="display:flex;justify-content:space-between" class="mini"><span>time 1</span><span>time 2</span><span>time 3</span><span>time 4</span></div>
@@ -925,8 +995,10 @@ svg text{font-family:'DM Sans',sans-serif}
   <rect x="610" y="44" width="270" height="140" rx="14" fill="#f6eedd"/><text x="745" y="70" text-anchor="middle" class="t-b">🛠️ Solution</text><text x="745" y="96" text-anchor="middle" class="t-t">controls' common features</text><text x="745" y="118" text-anchor="middle" class="t-t">= target list; score patients</text><text x="745" y="140" text-anchor="middle" class="t-t">on features present</text>
  </svg></figure>
  <div class="vtrap"><div class="x"><b>✗ THE MISTAKE</b>"Duck → swan → bird → animal proves a stored hierarchy."</div><div class="ok"><b>✓ CORRECT</b>Feature networks with no built-in hierarchy produce the same pattern (Rogers et al., 2002a): distinctive features go first.</div></div>
- <div class="vtrio"><div class="f"><b>💬 SAY IT TO A FRIEND</b>In this disease people slowly lose word meanings, the specific details first. That tells us knowledge is built from shared and special features.</div><div class="h"><b>🔑 MEMORY HOOK</b>Details fade first, the gist stays.</div><div class="t"><b>✎ EXAM TIP</b>Contrast hierarchical (Warrington) and feature-based views, and say which finding each explains.</div></div>
+ <div class="vtrio"><div class="f"><b>💬 SAY IT TO A FRIEND</b>Semantic dementia slowly wipes out what things are, while leaving speech, seeing and problem-solving mostly fine. That makes it a perfect window on how concepts are built. And drawing is a clever test: you don't need words, and you can see exactly which features of a duck someone still knows.</div><div class="h"><b>🔑 MEMORY HOOK</b>Shared features are sturdy; distinctive features are fragile.</div><div class="t"><b>✎ EXAM TIP</b>Be able to contrast the hierarchical view (Warrington, 1975; duck → animal) with the feature-based view (Garrard et al., 2001; McRae &amp; Cree, 2002; Rogers et al., 2002a).</div></div>
  <div class="vwatch"><a target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=semantic+dementia+explained">▶ Find a video: semantic dementia explained</a></div>
+ <details class="vchk"><summary>✅ Quick check: Why doubt a simple stored hierarchy?</summary><p>Block A's three reasons, repeated by Bozeat et al.: some concepts are more <b>typical</b> than others (Rosch, 1973); membership is sometimes <b>unclear</b>, or an item seems to belong to several categories; and some categories are much more <b>coherent</b> than others (vehicles versus household items).</p></details>
+ <details class="vchk"><summary>✅ Quick check: Why is semantic dementia especially informative?</summary><p>It causes a very selective loss of conceptual knowledge while speech, visuospatial skills, problem solving and day-to-day memory stay relatively good, and the same items fail across modalities. So it shows the structure of the semantic system itself.</p></details>
 </article>
 
 <article class="vlec" id="vz-C2">
@@ -937,17 +1009,19 @@ svg text{font-family:'DM Sans',sans-serif}
   <figure class="vfig"><svg viewBox="0 0 600 300" id="zDuck"></svg></figure><div class="vout" id="zSevOut"></div></div>
  <div class="vgrid">
   <figure class="vfig"><svg viewBox="0 0 560 300" id="zS1"></svg><figcaption>Figure C.2a. Study 1 <span class="bg">real data</span>: proportion of target features drawn from a spoken name.</figcaption></figure>
-  <ul class="vpts">
-   <li><b class="e">👥</b><b>Study 1</b>: 6 patients, 8 controls, 64 items drawn from their names. Target features = drawn by ≥ 6 of 8 controls (duck: body, head, 2 legs, webbed feet, beak, wings).</li>
-   <li><b class="e">📉</b>Patients <b>.53</b> vs controls <b>.95</b>; drawing correlated r = .96–.99 with naming and word–picture matching, while Rey copy and Raven's stayed relatively preserved.</li>
-   <li><b class="e">🐾</b>Living things drift to a <b>prototypical animal</b> (with intrusions); artefacts become simpler, <b>box-like</b> (JH's lamp).</li>
-   <li><b class="e">✏️</b><b>Study 2</b>: 3 patients (mild DS, moderate DC, severe IF): immediate copy, delayed copy (~10 s), drawing from name.</li>
-  </ul>
+  <div class="vsubs">
+   <div class="vsub"><b class="n">C.2.1</b><h5>Study 1: drawing from a name</h5>
+  <p>👥 6 patients drew 64 items from their names. <b>Scoring</b>: targets = features in ≥ 6 of 8 control drawings. Patients <b>mean .53</b> vs controls <b>.95</b>, correlating <b>extremely strongly</b> with naming (r = .96–.99). <b>Qualitative</b>: <b>semantically related</b> errors; <b>living things</b> turned prototypical, artefacts box-like.</p></div>
+   <div class="vsub"><b class="n">C.2.2</b><h5>Study 2: copying, omissions and intrusions</h5>
+  <p>✏️ Drawing from name needs the <b>word</b>, so 3 new patients also did immediate and <b>delayed copying</b> (~10 s). Errors rose from copy to name. Omissions: <b>not domain</b>-specific; intrusions: more for animals, until each feature's <b>distinctiveness score</b> was included.</p></div>
+   <div class="vsub"><b class="n">C.2.3</b><h5>What it all means</h5>
+  <p>🏛️ A <b>unitary, amodal semantic system</b>: <b>consistency of performance</b> (drawing tracks <b>verbal</b> tasks; copying spared) and <b>consistency of errors</b> (patients <b>over-extend</b> typical names). Visual knowledge seems to <b>interact with</b> and <b>depend on</b> semantics; a separate <b>structural description system</b> explains this less well.</p></div>
+   </div>
  </div>
  <figure class="vfig"><svg viewBox="0 0 900 300" id="zS2"></svg><figcaption>Figure C.2b. Study 2: errors rise with reliance on concepts and with severity. Values read from Bozeat et al.'s Figure 3, approximate.</figcaption></figure>
  <div class="vgrid">
   <figure class="vfig"><svg viewBox="0 0 560 290">
-   <text x="280" y="24" text-anchor="middle" class="t-h">The key analysis: distinctiveness</text>
+   <text x="280" y="24" text-anchor="middle" class="t-h">The key analysis: feature distinctiveness</text>
    <rect x="20" y="40" width="160" height="110" rx="12" fill="#eaf6ee"/><text x="100" y="64" text-anchor="middle" class="t-b">shared-by-domain</text><text x="100" y="88" text-anchor="middle" font-size="22">👀</text><text x="100" y="112" text-anchor="middle" class="t-s">eyes (all animals)</text><text x="100" y="134" text-anchor="middle" class="t-ok">intrude MOST</text>
    <rect x="200" y="40" width="160" height="110" rx="12" fill="#f6eedd"/><text x="280" y="64" text-anchor="middle" class="t-b">shared-by-category</text><text x="280" y="88" text-anchor="middle" font-size="22">🪽</text><text x="280" y="112" text-anchor="middle" class="t-s">wings (birds)</text><text x="280" y="134" text-anchor="middle" class="t-g">in between</text>
    <rect x="380" y="40" width="160" height="110" rx="12" fill="#fbecea"/><text x="460" y="64" text-anchor="middle" class="t-b">distinctive</text><text x="460" y="88" text-anchor="middle" font-size="22">🟢</text><text x="460" y="112" text-anchor="middle" class="t-s">mallard's green head</text><text x="460" y="134" text-anchor="middle" class="t-r">omitted MOST</text>
@@ -956,18 +1030,21 @@ svg text{font-family:'DM Sans',sans-serif}
    <rect x="120" y="236" width="354" height="26" rx="6" fill="#f3f1ec"/><rect x="120" y="236" width="103" height="26" rx="6" fill="#a8854a"/><text x="110" y="254" text-anchor="end" class="t-b">artefacts</text><text x="230" y="254" class="t-b">.29</text>
   </svg><figcaption>Figure C.2c. Once distinctiveness is included, domain no longer predicts intrusions (F = 2.94, p &gt; .1).</figcaption></figure>
   <ul class="vpts">
-   <li><b class="e">📊</b>Total errors: immediate copy &lt; delayed copy &lt; drawing from name, and DS &lt; DC &lt; IF.</li>
+   <li><b class="e">📊</b>Total errors: immediate copy &lt; delayed copy &lt; drawing from name, and DS &lt; DC &lt; IF. If a name meant nothing, a <b>non-perceptual prompt</b> was given (duck: "a bird that swims on ponds, waddles on land, and lays eggs").</li>
    <li><b class="e">➖</b><b>Omissions</b>: no domain difference; distinctive features omitted most (F = 186.23).</li>
-   <li><b class="e">➕</b><b>Intrusions</b>: more for animals, domain-shared features most (F = 19.12), until distinctiveness is controlled.</li>
-   <li><b class="e">🔺</b>Delayed copy of meaningless <b>geometric shapes</b>: all patients within the control range → the problem is semantic, not visual or episodic.</li>
+   <li><b class="e">➕</b><b>Intrusions</b>: more for animals, domain-shared features most (F = 19.12). Animal drawings had more shared features (<b>mean .59 per item</b> vs .29), and once distinctiveness was included, <b>domain no longer predicted intrusions</b>.</li>
+   <li><b class="e">🔺</b><b>Delayed copying of meaningless geometric shapes</b>: all patients within the control range → the problem is semantic, not visual or episodic.</li>
    <li><b class="e">🏛️</b>Conclusion: one <b>unitary, amodal</b> semantic system, gradually degraded; visual knowledge partly depends on it.</li>
   </ul>
  </div>
  <div class="vana"><div class="ae">🏙️</div><div><b>THINK OF IT LIKE…</b>A city map fading in the rain: the little side streets (what makes a duck a duck) wash out first, while the big avenues shared by every neighbourhood (eyes, legs, "animal") stay visible, and you start drawing every animal with the same main roads.</div></div>
  <div class="vtrap"><div class="x"><b>✗ THE MISTAKE</b>"Semantic dementia damages animal knowledge more than artefact knowledge."</div><div class="ok"><b>✓ CORRECT</b>Omissions didn't differ by domain, and the extra animal intrusions vanished once distinctiveness was controlled: animals just have more shared features.</div></div>
- <div class="vtrio"><div class="f"><b>💬 SAY IT TO A FRIEND</b>Patients drew a duck with four legs: they'd lost what makes a duck special, but kept what most animals have, so a "typical animal" leaked in.</div><div class="h"><b>🔑 MEMORY HOOK</b>Special features fade, shared features spread.</div><div class="t"><b>✎ EXAM TIP</b>Explain why copying geometric shapes is the key control, and why the domain effect disappears.</div></div>
+ <div class="vtrio"><div class="f"><b>💬 SAY IT TO A FRIEND</b>People with semantic dementia asked to draw a duck from its name forget the special duck bits but keep the general animal bits, so they draw a duck with four legs. They can copy a picture fine, so it's not their drawing, it's their knowledge of what a duck is.</div><div class="h"><b>🔑 MEMORY HOOK</b>Distinctive goes first; shared stays and spreads.</div><div class="t"><b>✎ EXAM TIP</b>Know the three conditions and their logic (immediate copy &lt; delayed copy &lt; from name), and the key result that domain stops predicting intrusions once distinctiveness is included.</div></div>
  <div class="vwatch"><a target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=semantic+dementia+drawing+duck+four+legs">▶ Find a video: semantic dementia drawings</a></div>
  <details class="vchk"><summary>✅ Quick check: Why include immediate copying?</summary><p>It needs almost no semantic knowledge. Good immediate copying shows patients can see and draw; errors appearing only when memory or meaning is needed point to a semantic deficit.</p></details>
+ <details class="vchk"><summary>✅ Quick check: Why was delayed copying of geometric shapes included?</summary><p>Delayed copying of real objects draws on episodic and semantic memory. Meaningless shapes have almost no semantic content, so if patients copy them normally after a delay (they did), the failure with real objects isolates the semantic part.</p></details>
+ <details class="vchk"><summary>✅ Quick check: Why prefer one amodal system over a separate structural description system?</summary><p>A separate visual store (Riddoch et al., 1988) cannot explain why drawing correlates so strongly with <b>verbal</b> tasks, or why <b>distinctive</b> visual features are more vulnerable than shared ones. The errors also match those in naming, definition and sorting (Hodges et al., 1994, 1995).</p></details>
+ <details class="vchk"><summary>✅ Quick check: What makes drawing a useful semantic test?</summary><p>It reveals <b>fine gradations</b> of knowledge, because a patient can omit or add single features, whereas naming forces one label. Delayed copying assesses semantic memory with <b>no verbal input or output</b>, is quick and gives rich data.</p></details>
 </article>
 
 <section class="vsec" id="vz-synth">
@@ -981,23 +1058,23 @@ svg text{font-family:'DM Sans',sans-serif}
  <rect x="620" y="56" width="260" height="140" rx="16" fill="#eaf6ee"/><text x="750" y="84" text-anchor="middle" class="t-b">C · Bozeat et al.</text><text x="750" y="112" text-anchor="middle" font-size="26">🦆</text><text x="750" y="146" text-anchor="middle" class="t-t">shared core survives, intrudes</text><text x="750" y="166" text-anchor="middle" class="t-s">(2003)</text>
  <text x="450" y="236" text-anchor="middle" class="t-g">Similarity does most of the work, but essences and world knowledge can override it.</text>
 </svg></figure>
-<div class="vcall">A concept is not a definition but a flexible, graded web of features and links, built from examples, summaries, rules and knowledge, and it erodes from its distinctive edges inward.</div>
+<div class="vcall">A concept is not a definition but a structured bundle of features that differ in how widely they are shared, organised by similarity and by knowledge.</div>
 </section>
 
 <section class="vsec" id="vz-one">
 <h2>📄 Theme 4 on one page</h2>
 <div class="vone">
- <div><span class="e">🌫️</span><b class="k">A1</b><h4>Definitions fail</h4>No necessary + sufficient features; fuzzy borders (Hampton; up to 22% mind changes).</div>
- <div><span class="e">🎯</span><b class="k">A2</b><h4>Typicality</h4>Some members are better; typical = many family features, few from other families (Rosch &amp; Mervis).</div>
- <div><span class="e">🪜</span><b class="k">A3</b><h4>Basic level</h4>"Chair", not "furniture": 1,595 of 1,610 names. Most differentiated; shifts with expertise and culture.</div>
- <div><span class="e">⚖️</span><b class="k">A4</b><h4>Prototype vs exemplar</h4>One weighted summary vs many examples; both explain typicality; probably both, plus rules.</div>
- <div><span class="e">🦝</span><b class="k">A5</b><h4>Knowledge &amp; essence</h4>Sensible concepts learned faster (donker); raccoons keep their essence, coffeepots don't (Keil).</div>
- <div><span class="e">🕸️</span><b class="k">B1</b><h4>Networks</h4>Nodes + links; activation spreads, fades, sums, fires → typicality in verification and priming.</div>
- <div><span class="e">🧭</span><b class="k">B2</b><h4>Four approaches</h4>Classical fails; prototype (Posner) vs exemplar each have gaps; essentialism is top-down.</div>
- <div><span class="e">🧠</span><b class="k">C1</b><h4>Semantic dementia</h4>Selective, amodal loss; hierarchy vs feature view; distinctive vs shared features.</div>
- <div><span class="e">🦆</span><b class="k">C2</b><h4>Four-legged duck</h4>.53 vs .95; distinctive features omitted, shared ones intrude; domain effect = feature distribution.</div>
+ <div><span class="e">🌫️</span><b class="k">A1</b><h4>Definitions fail</h4>Hardly any category has necessary and sufficient features; borders are fuzzy and people even change their minds (22%). <i>Why it matters: concepts are not definitions.</i></div>
+ <div><span class="e">🎯</span><b class="k">A2</b><h4>Typicality</h4>Some members are better (robin &gt; penguin) because they share many features with their category and few with others: family resemblance. <i>Why it matters: typicality shapes speed, learning and language.</i></div>
+ <div><span class="e">🪜</span><b class="k">A3</b><h4>Basic level</h4>We prefer the middle level ("chair"): members alike, other categories different. It shifts with culture and expertise. <i>Why it matters: it is where concepts are most useful.</i></div>
+ <div><span class="e">⚖️</span><b class="k">A4</b><h4>Prototype vs exemplar</h4>Store one weighted summary, or many remembered examples? Both explain typicality; real concepts probably use both, plus rules. <i>Why it matters: this is the core theory debate.</i></div>
+ <div><span class="e">🦝</span><b class="k">A5</b><h4>Knowledge &amp; essence</h4>Sensible concepts are learned faster (donker); natural kinds feel like they have a hidden essence (Keil's raccoon). <i>Why it matters: concepts depend on what we know.</i></div>
+ <div><span class="e">🕸️</span><b class="k">B1</b><h4>Semantic networks</h4>Concepts as linked nodes; activation spreads, fades and sums, which explains faster verification of typical items and priming. <i>Why it matters: a model of how knowledge is retrieved.</i></div>
+ <div><span class="e">🧭</span><b class="k">B2</b><h4>Four approaches</h4>Classical fails (no definitions, typicality, fuzzy edges); prototype (Posner) and exemplar (context, correlations) each win some, lose some; essence adds a top-down view. <i>Why it matters: no single theory is complete.</i></div>
+ <div><span class="e">🧠</span><b class="k">C1</b><h4>Semantic dementia</h4>Selective loss of concepts; the question is whether knowledge is stored in a hierarchy or as shared and distinctive features. <i>Why it matters: breakdown reveals structure.</i></div>
+ <div><span class="e">🦆</span><b class="k">C2</b><h4>A duck with four legs</h4>Errors rise with reliance on concepts and with severity; distinctive features are lost first, shared ones intrude, so drawings turn prototypical; the domain effect is really a feature effect. <i>Why it matters: one central, feature-based semantic system.</i></div>
 </div>
-<div class="vfriend">💬 <b>The whole theme to a friend:</b> "Categories don't have strict definitions; they have fuzzy edges and better and worse members, and we prefer middle-level names like 'chair'. In the head, knowledge is a web where related ideas warm each other up. When a disease erases that web, the special details go first, which is why patients draw a duck with four legs."</div>
+<div class="vfriend">💬 <b>The whole theme to a friend:</b> "Your idea of 'bird' isn't a dictionary definition. It's a bundle of features, some shared by almost all birds, some special to one kind, and the robin is the best bird because it has the most common ones. When people with semantic dementia lose concepts, the special features go first and the common ones stay and spill over. That's why they draw a duck with four legs."</div>
 <p class="mini" style="margin-top:18px">Sources: Murphy (NOBA), <i>Categories and Concepts</i> · Robinson-Riegler &amp; Robinson-Riegler, pp. 198–207 · Bozeat et al. (2003), <i>Cognitive Neuropsychology</i>. Video buttons open a YouTube search so you can pick a current video.</p>
 </section>
 </div>
@@ -1027,7 +1104,9 @@ var TL=[['1956','Bruner, Goodnow & Austin','B','📏 The classical view: categor
 ['1995','Hodges, Graham & Patterson','C','🦆 A patient names a duck "duck", then "swan", "bird", "animal" over 18 months.'],
 ['2001','Garrard et al.','C','🧶 Typicality predicted by similarity to the category\'s average feature set.'],
 ['2002','Rogers et al.','C','💻 Feature networks without a hierarchy reproduce the decline after simulated damage.'],
+['2002','Norenzayan et al.','A','🌏 Eastern and Western modes of thought may lead to different concepts, though cultures share many categories.'],
 ['2003','Bozeat et al.','C','✏️ Drawings in semantic dementia: distinctive features lost, shared ones intrude: a duck with four legs.'],
+['2004','Maddox & Ashby','A','🧠 Multiple systems: exemplars, general descriptions, knowledge and rules, probably in different brain structures.'],
 ['2006','Pluto','A','🪐 Pluto downgraded: there turned out to be no hard-and-fast definition of a planet.']];
 var tl=G('ztl');TL.forEach(function(t){var b=document.createElement('button');b.className='vtp '+(t[2]==='A'?'A':t[2]==='C'?'D':'');if(t[2]==='B')b.style.setProperty('--x','1');b.innerHTML='<span class="y">'+t[0]+'</span><span class="d" style="border-color:'+(t[2]==='A'?'#8aa3c7':t[2]==='B'?'#a593c7':'#2f8a57')+'"></span><span class="w">'+t[1]+'</span>';b.onclick=function(){tl.querySelectorAll('.vtp').forEach(function(x){x.classList.remove('on')});b.classList.add('on');G('ztlinfo').innerHTML='<b>'+t[0]+' · '+t[1]+'</b><br>'+t[3]};tl.appendChild(b)});
 /* A.1 fuzzy */
@@ -1062,8 +1141,20 @@ function drawPE(pt){var s=G('zPE');clear(s);s.appendChild(el('rect',{x:10,y:10,w
 drawPE();
 G('zPE').addEventListener('click',function(e){var s=G('zPE'),r=s.getBoundingClientRect();var x=(e.clientX-r.left)/r.width*600,y=(e.clientY-r.top)/r.height*340;drawPE([x,y]);function d(a,b){return Math.hypot(a[0]-b[0],a[1]-b[1])}var proto=d([x,y],mG)<d([x,y],mF)?'glorp':'frib';function sim(arr){return arr.reduce(function(t,p){return t+Math.exp(-d([x,y],p)/30)},0)}var sg=sim(GL),sf=sim(FB);var ex=sg>sf?'glorp':'frib';G('zPEout').innerHTML='📋 Prototype theory: nearer ★ → <b>'+proto+'</b> &nbsp;|&nbsp; 🗃️ Exemplar theory: summed similarity glorp '+sg.toFixed(2)+' vs frib '+sf.toFixed(2)+' → <b>'+ex+'</b><br>'+(proto===ex?'✅ They agree here.':'⚡ <b>They disagree!</b> Close to one remembered example, exemplar theory follows that example (like Allen &amp; Brooks, 1991), while prototype theory only looks at the averages.')});
 /* A.5 Keil vote */
-var KE=[['🦝 A raccoon is dyed black and white and given a smelly sac. It looks and smells like a skunk.','raccoon','skunk','raccoon','Natural kind: people keep the essence. Adults and children over 4 said "still a raccoon".'],['☕ A coffeepot is rebuilt so it looks like and works as a bird feeder.','coffeepot','bird feeder','bird feeder','Artifact: function decides, no hidden essence. People said it is now a bird feeder.'],['🐅 A tiger is surgically given a mane so it looks like a lion. Its cubs?','tigers','lions','tigers','Sign ③: the essence is passed on to offspring.']];
+var KE=[['🦝 A raccoon is dyed black and white and given a smelly sac. It looks and smells like a skunk.','raccoon','skunk','raccoon','Natural kind: people keep the essence. Adults and children over 4 said "still a raccoon".'],['☕ A coffeepot is rebuilt so it looks like and works as a bird feeder.','coffeepot','bird feeder','bird feeder','Artifact: function decides, no hidden essence. People said it is now a bird feeder.'],['🐶 A puppy is raised by cats and learns to act like a cat. What is it?','dog','cat','dog','Sign ②: people resist changes in membership, and for living things the essence comes from the parents (sign ③). Upbringing cannot change what it is.']];
 G('zKeil').innerHTML='';KE.forEach(function(k,i){var d=document.createElement('div');d.className='poll';d.innerHTML='<span>'+k[0]+'</span>';[k[1],k[2]].forEach(function(a){var b=document.createElement('button');b.className='vbtn';b.textContent=a;b.onclick=function(){d.querySelectorAll('button').forEach(function(x){x.classList.remove('sel')});b.classList.add('sel');G('zKeilOut').innerHTML=(a===k[3]?'✅ ':'🤔 Most people say "'+k[3]+'". ')+k[4]};d.appendChild(b)});G('zKeil').appendChild(d)});
+/* A.5 knowledge approach + baby (generic poll rows) */
+function pollRows(box,out,items){var B=G(box);if(!B)return;B.innerHTML='';items.forEach(function(k){var d=document.createElement('div');d.className='poll';d.innerHTML='<span>'+k[0]+'</span>';k[1].forEach(function(a){var b=document.createElement('button');b.className='vbtn';b.textContent=a;b.onclick=function(){d.querySelectorAll('button').forEach(function(x){x.classList.remove('sel')});b.classList.add('sel');G(out).innerHTML=(a===k[2]?'✅ ':'🤔 Answer: <b>'+k[2]+'</b>. ')+k[3]};d.appendChild(b)});B.appendChild(d)})}
+pollRows('zKA','zKAOut',[
+ ['Which invented building do people learn faster: a donker (under water, reached by submarine, divers live in it) or a blegdav (in the desert, reached by submarine, polar bears as pets)?',['donker','blegdav'],'donker','Murphy &amp; Allopenna (1994): concepts that make sense are learned much faster than concepts that do not.'],
+ ['Which donker feature is learned better: "under water" or "is red"?',['under water','is red'],'under water','Features that seem connected (under water, reached by submarine) are learned better than unrelated ones (being red).'],
+ ['People quickly understood tablets by drawing on what they knew about laptops and phones.',['knowledge helps','knowledge misleads'],'knowledge helps','The knowledge approach: world knowledge is used when learning a new concept.'],
+ ['People expected a tablet to do what their phone did.',['knowledge helps','knowledge misleads'],'knowledge misleads','The same world knowledge can also mislead.']]);
+pollRows('zBaby','zBabyOut',[
+ ['👶 You have seen babies before.',['exemplars','general description','general knowledge','rule'],'exemplars','Seeing exemplars: remembered examples of the category.'],
+ ['🖼️ Someone told you "babies like black-and-white pictures".',['exemplars','general description','general knowledge','rule'],'general description','Hearing a general description: a statement about the category as a whole.'],
+ ['🫘 You know babies have kidneys, though nobody told you.',['exemplars','general description','general knowledge','rule'],'general knowledge','Using general knowledge about the world (all people have kidneys).'],
+ ['🍼 All babies have a rooting reflex.',['exemplars','general description','general knowledge','rule'],'rule','Sometimes we learn an explicit rule that holds for every member.']]);
 /* B.1 network */
 var NODES={yellow:[350,60],sun:[200,110],lemon:[500,110],canary:[350,170],bird:[250,260],pet:[470,250],cat:[580,330],robin:[120,330],red:[100,200],fire:[60,90],apple:[200,25],cherry:[50,280],fruit:[620,180]};
 var LINKS=[['yellow','sun',.9],['yellow','lemon',.9],['yellow','canary',.9],['canary','bird',.9],['canary','pet',.7],['pet','cat',.9],['bird','robin',.9],['robin','red',.6],['red','fire',.9],['red','apple',.8],['red','cherry',.8],['lemon','fruit',.9],['apple','fruit',.9],['cherry','fruit',.8],['sun','fire',.5]];
